@@ -30,31 +30,91 @@
         Lastly, using our initial ideas we defined the abstract architecture to breakdown the similarities between each
         design. This abstract architecture defined how various parts of our robot might work together and 
         ultimately allowed us to split our team into two sub-teams to explore a single degree-of-freedom actuator and
-        prototype the necessary mechanisms
+        prototype the necessary mechanisms.
 
         Check out this <a href="/Documents/RDS_RequirementsandArchitecture2.pdf">Requirements and Architecture</a> 
         document for more specifics.
+
+        <img src="/images/RDSCapstone/Requirements2Pic.jpg" alt="Concept Sketch" width="502" height="401">
     </p>
     
     <!--Refine Concepts-->
     <p>
-        The next phase of our 
-        <a href="/Documents/RDSPart1_RefineConcepts3.pdf"> Here </a>
+        The next phase of our desing process was to create physical prototypes of the power transmission elements,
+        fixtures, and load bearing elements necessary for the final device. In our early team meetings, we came
+        up with many possible designs and now we had to break them into distinct components and flesh out the ideas
+        more carefully. 
+        <br>
+        We ultimately landed on four concept archetypes(gantry, cable bot, open chain linkage, and closed chain linkage)
+        each with two subcategories, parrallel and serial.
+
+
+        Check out this <a href="/Documents/RDSPart1_RefineConcepts3.pdf"> Concept Refinement </a> 
+        document for more specifics.
+
+        <img src="/images/RDSCapstone/RefineConcept3Pic.jpg" alt="Concept Sketch" width="502" height="401">
     </p>
 
-     <!-- -->
+     <!--Prototype Subsystems -->
     <p>
-        <a href="/Documents/RDSPart2_PrototypeSubsystems4.pdf"> Here </a>
+        With our concepts refined, it was now time to prototype the feasible subsystem designs and answer important
+        questions regarding design performance and ultimately guide us toward a design that can meet all of our
+        requirements.
+        
+        Check out this <a href="/Documents/RDSPart2_PrototypeSubsystems4.pdf"> Prototyping Subsystems </a>
+        document for more specifics.
+
+        <img src="/images/RDSCapstone/PrototypeSubsystems4Pic.png" alt="Prototype" width="502" height="401">
     </p>
 
-     <!-- -->
+     <!--Integrate Subsystems-->
     <p>
-        <a href="/Documents/RDSPart3_IntegrateSubsystems5.pdf"> Here </a>    
+        After prototyping for approximately 4 weeks, it was time to combine the best ideas to create an 
+        integrated device mockup that is robust and functionally demonstrates the passive kinematics and 
+        dynamics of the real thing. We ultimately decided on an open chain linkage, specifically two, 
+        2R arms that would achieve all necessary degrees of freedom and would likely be able to fulfill
+        all of our design requirements.
+        
+        Check out this <a href="/Documents/RDSPart3_IntegrateSubsystems5.pdf"> Integrate Subsystems </a> 
+        document for more specifics.   
+
+        <img src="/images/RDSCapstone/IntegrateSubsystems5Pic.png" alt="Prototype" width="502" height="401">
     </p>
 
-     <!-- -->
+     <!--Final Documentation-->
     <p>
-        <a href="/Documents/RDS_FinalDocumentation6.pdf"> Here </a>    
+        With our concept decided it was time to create an alpha/beta version of our robot. We created a robot with 
+        two, 2R parallel linkages that would each hold a magnet on the end effector underneath a raspberry pi touch screen. 
+        Each 2R linkage had all motors mounted on the base by utilizing a common shaft axis which would reduce the inertia
+        felt at the end effector.
+
+        <img src="/images/RDSCapstone/FinalDoc6Pic1.jpg" alt="Overview" width="502" height="401">
+        
+        <br>
+        The touch screen could track the position of a single finger allowing us to utilize admittance control.
+        We could take the difference in position between the finger on the top of the touch screen and the end effector
+        of the robot underneath and essentially create a virtual spring that would dictate the resulting velocity.
+
+        <br>
+        The choice in magnets at the end effector proved to be the most challenging part. The issue was the 
+        coupling between normal force and shear force. Strong magnets created excellent virtual walls due to 
+        their high shear force, however the high normal force made free-motion friction unusable. Weak magnets
+        had usable free-motion friction, however the weak normal force made virutal walls feel nonexistent.
+        We ultimately discovered polymagnet, a company that can create custom magnets with different North/South 
+        configurations that provided great shear strength while keeping the normal force and friction to a minimum.
+
+        <img src="/images/RDSCapstone/FinalDoc6Pic2.jpg" alt="Magnets" width="502" height="401">
+        
+        Check out our <a href="/Documents/RDS_FinalDocumentation6.pdf"> Final Documentation </a> for an in depth look
+        at our design.
+
+        Here is a video of our design.
+    
+        <video width="320" height="240" controls muted>
+            <source src="/images/RDSCapstone/DemoVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    
     </p>
 
 
