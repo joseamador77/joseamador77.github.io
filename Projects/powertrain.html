@@ -5,20 +5,114 @@
     <h1>4WD Powertrain System</h1>
 
 
-    Check out our <a href="/Documents/PowertrainME399FinalReport.pdf"> ME 399 Report Documentation </a> 
+   
     
+
+    <h2>Introduction</h2>
+    <p>
+        This project encompasses my main responsibility as the powertrain lead on Northwestern's Baja team. For more details about the team and my various responsibilities, click 
+        <a href=/Experience/baja.html> here. </a>
+        My engineering responsibility included establishing the overall powertrain system layout and designing/manufacturing a single speed gearbox. The main challenge this year was transitioning
+        to 4WD after generations of 2WD vehicles.  
+
+        I used my gearbox design as part of an independent study and wrote a report which can be found here: <a href="/Documents/Powertrain_ME399FinalReport.pdf"> ME 399 Final Report </a> 
+
+        <br>
+        
+        <img src="/images/Baja/powertrain/IntroPic.jpg" alt="Picture of gearbox" width="502" height="401">
+    </p>
+     
+
+    <h2>Requirements</h2>
     <ul>
-        <li>Requirements</li>
-        <li>Research/Development</li>
-        <li>CAD</li>
-        <li>Data Collection</li>
-        <li>Calculations</li>
-        <li>Testing/validation</li>
+        <li>Reduce weight of previous system by at least 20 pounds</li>
+        <li>Achieve a top speed of 25 mph</li>
+        <li>Reliably deliver power to all four wheels with the ability to toggle between 4WD and 2WD</li>
+        <li>Minimize the footprint within the frame to allow effective packaging of other subsystems including ergonomics/suspension/chassis</li>
+        <li>Maintain a FOS of 1.5 on all components</li>
+        <li>Accomodate a Briggs & Stratton 10 HP OHV Vanguard Model 19</li>
     </ul>
 
+    <h2>Research and Development</h2>
+    <p>
+        The 4WD requirement was actually initially introduced during the 2019-2020 season however it was nevery fully tested due to pandemic cancellations/shutdowns. 
+        I studied the completed parts of this design extensively and reached out to the previous designer to learn about their motives and goals. I ultimately decided
+        that the system needed a complete redesign because due to its bulkiness, unreliability, and complicated belt drive design.
+        <br>
+        I learned what not to do from the previous design and began researching methods to redo the entire system. 
+        I researched many existing 4WD systems in both cars and ATVs noting how power was transferred from the engine to all 4 wheels. This included extensive
+        research on existing differentials on the market including limited slip, locking, and ultimately decided on Polaris' On-Demand differential for its backwards
+        compatibility with existing halfshafts, small footprint, and relatively lightweight design.
+        <br>
+        Additionally, I came up with the idea to transition from a transversely mounted engine to a longitudinally mounted engine. This eliminated many of the issues with 
+        the previous design and would allow for a more compact, simple system. 
+
+        
+        <br>
+        <img src="/images/Baja/powertrain/DiffResearch.jpg" alt="Picture of Differential" width="502" height="401">
+
+    </p>
+
+    <h2>Packaging and Layout</h2>
+    <p>
+        It was my job to lay out the essential powertrain components into the frame, ensuring proper interaction between other subsystems and resolving
+        space claim conflicts. There are many different components that must fit into a small offroad vehicle including the engine, gearbox, CVT, differentials, and other
+        drivetrain components. The main change was a raised longitudinal engine that could accomodate a gearbox underneath which would output to a single drive shaft axis that spans
+        from the front differential to the rear differential
+
+        <br>
+        <img src="/images/Baja/powertrain/Packaging.jpg" alt="Ptrain Layout" width="502" height="401">
+
+    </p>
+
+    <h2>Gearbox Fatigue and Stress Calculations</h2>
+    <p>
+        The choice of gears, bearings, and shafts were mathematically determined using a spreadsheet I created that calculated the load, stress, and fatigue each component would
+        experience from our standard engine's rpm/torque. Working with a desired final drive ratio, a slight decrease over previous years for increased low-end torque and
+        greater acceleration, both of which would be necessary for a heavier 4WD car. 
+        I then calculated the working and allowable stresses for each gear, bearing, and shaft in the gearbox, optimizing for weight while maintaining a 1.5 factor of safety and
+        keeping in mind design for manufacturing principles.
+
+        <br>        
+        <a href="https://docs.google.com/spreadsheets/d/1klY438o4h8O5KxAkWzMZMAR1iqDyMb-4XMyEeOjy2Ig/edit?usp=sharing" target="_blank"> Calculation Spreadsheet</a>
+
+        
+        <img src="/images/Baja/powertrain/ShaftFBD.jpg" alt="Free body diagram" width="502" height="401">
+        
+    </p>
+
+    <h2>Gearbox Design and CAD</h2>
+    <p>
+        With the components chosen, it was time to model my gearbox in SolidWorks. I imported all off the shelf components such as gears, bearings, and seals, and modeled the gearbox shafts
+        to ensure proper constraints and clearances for all rotating components. Using the shaft subassemblies, I modeled a housing that would later be CNC milled from billet aluminum.
+        The gearbox modeling required great attention to detail to ensure proper spacing and CNC manufacturability while keeping in mind tooling limitations.
+        <br>
+        <img src="/images/Baja/powertrain/GearboxInternals.jpg" alt="Gearbox Internals" width="502" height="401">
+
+    </p>
+
+    <h2>Manufacturing</h2>
+    <p>
+        The housing was CNC milled on a Haas VF2 from 6061 billet aluminum. I wrote all of the CNC operations using NX CAM. The housing
+        is divided into two sections, and body the cover, each requiring two setups to machine the internals and the externals. The CAM programs
+        utilize a wide array of CNC operations from planar and cavity milling, to bearing fits and 3D profiles.
 
 
-    
+        <br>
+        <img src="/images/Baja/powertrain/HousingManufacturing.jpg" alt="Machined Housing" width="502" height="401">
+    </p>
+
+    <h2>Results</h2>
+    <p>
+        The powertrain system met all the requirements described above, far exceeding the weight reduction goal by an additional 15 lbs.
+        The 2021 car, named Dory, proved to be extremely robust, surviving all pre-competition testing and the entirety 
+        of the main competition, including an intense 4 hour endurance race where, for the first time in Northwestern
+        Baja's history our car never left the track. Dory went on to place 6th in endurance and 8th overall at the 2021
+        Baja Louisville competition, Northwestern Baja's best ever placement.
+        
+        <br>
+        <img src="/images/Baja/powertrain/JoseAward.jpg" alt="Jose Award" width="502" height="401">
+    </p>
 
 </body>
 
