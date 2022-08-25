@@ -7,27 +7,50 @@
     
     <h2>Introduction</h2>
     <p>
+        Northwestern Baja uses a double wishbone suspension setup that consists of an upper and a lower A-arm,
+        both of which connect the chassis to an upright. During the 2019-2020 school year, my project was the 
+        upper A-arm, the main load bearing front suspension member that also connects the front shocks to the suspension system.
 
+        <br>
         <img src="/images/Baja/aarms/WeldedSuspension.jpg" alt="Suspension Components" width="502" height="401">
     </p>
+
+
     
     <h2>Design Overview</h2>
     <p>
-        tubes and spehericals
-        <!--picture of design-->
+        The A-Arm design consists of two short sections of tube which house delrin bushings that are used to interface
+        with the suspenion tabs on the chassis. These are welded to the main tubes, the ones that form the "A",
+        which are coped to a bearing cup and attach to the shock plate. The bearing cup contains a spherical bearing
+        that aligns with the kingpin axis of the steering system. The shock plate is used to attach the shock tabs
+        to the uppper A-arm and interface with the shock.
+        
+        <br>
         <img src="/images/Baja/aarms/AArmCad.jpg" alt="AArm CAD" width="502" height="401">
     </p>
 
     <h2>Finite Element Analysis</h2>
     <p>
-        <!--Picture of FEA-->
-        <img src="/images/Baja/aarms/AArmFEA.jpg" alt="AArm CAD" width="502" height="401">
+        The upper A-arm must be capable of withstanding the punishments of rough off-road terrain. The most difficult
+        load case is when the car goes off large jumps/over obstacles and the shocks exert high forces on the suspension.
+        I conducted FEA to simulate this driving scenario and ensure that the suspenion would not yield after taking a
+        large jump. The FEA computed the Von Mises stress in 4130 alloy steel and was used to optimize for weight
+        while maintaining a FOS of 1.3
+        
+        <br>
+        <img src="/images/Baja/aarms/AArmFEA.jpg" alt="AArm FEA Results" width="502" height="401">
     </p>
 
     <h2>Fixturing</h2>
     <p>
-        <!--picture of fixturing setup-->
-        <img src="/images/Baja/aarms/AArmFixturing.jpg" alt="AArm CAD" width="502" height="401">
+        Once the A-arm was designed, it had to be manufactured and each component welded together in a specific orientation/position.
+        Using precision machined components along with 3D printed fixtures, I was able to secure each component
+        to a waterjet fixturing plate, ensuring quick and accurate setup for welding while not overconstraining the design.
+        I also designed the fixturing setup for the other suspension components, utilizing the same fixtures where possible
+        and keeping everything on the same fixture plate for efficient/cheap setup.
+        
+        <br>
+        <img src="/images/Baja/aarms/AArmFixturing.jpg" alt="AArm Fixturing" width="502" height="401">
     </p>
 
 
