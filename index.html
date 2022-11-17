@@ -10,13 +10,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
 </style>
 </head>
 <body>
@@ -25,39 +18,33 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Logo</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Values</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">News</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Clients</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Jose Amador</a>
+    <a href="#education" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Education</a>
+    <a href="#experience" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Experience</a>
+    <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+    <a href="#skills&crafts" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Skills & Crafts</a>
+    <a href="#precollege" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Pre-College</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Contact</a>
   </div>
 </div>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
-
+<div class="w3-main" style="margin-left:0px">
+<!--FIRST ROW-->
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2 class="w3-text-teal">Education</h2>
+      
+      <h4 class="w3-text-red">Stanford University - Stanford, CA - 2022-2024</h4>
+      <p>Master of Science - Mechanical Engineering w/ Robotics and Kinematics Concentration</p>
+
+      <h4 class="w3-text-purple">Northwestern University - Evanston, IL - 2018-2022</h4>
+      <p>Northwestern University - Evanston, IL - 2018-2022<br>
+        Bachelor of Science - Mechanical Engineering w/ Robotics Concentration<br>
+        Minor - Computer Science<br>
+        GPA - 3.899/4.0, Cum Laude Degree Honors<br>
+        </p>
+      
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -65,11 +52,59 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </div>
   </div>
 
+  <!--SECOND ROW-->
   <div class="w3-row">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h2 class="w3-text-teal">Experience & Leadership</h2>
+      
+    <h3 class="w3-text-teal">Johnson & Johnson - R&D Mechanical Engineering Intern - Summer 2022</h3>
+        <p>Check back later</p>
+
+    <h3 class="w3-text-teal">Shure Incorporated - Process Engineering Intern - Summer 2021</h3>
+        <p>I assisted in the reaseach, development, and implementation of new and improved manufacturing 
+            processes. I designed and conducted a process capability study to reduce adhesive curing time 
+            from 90 mins to 25 mins. 
+            <br>
+            <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="location.href = '/Experience/shure.html';">Internship Details</button>
+            
+
+    <h3 class="w3-text-teal">Northwestern University Baja - 2018-2022</h3>
+
+        <h4 class="w3-text-teal">Chief Engineer - 2021-2022</h4>
+            <p>As Chief Engineer I was responsible for managing and overseeing the projects of all 35+
+            members on team ensuring design feasibility, manufacturability, and rules compliance. I 
+            coordinated with other high level leaders to set the vision, goals, and values of the team
+            and created standards for which parts were to be modeled by.
+            </p>
+
+        <h4 class="w3-text-teal">Powertrain Lead - 2020-2021</h4>
+            <p>
+                As Powertrain Lead I was responsible for the main powertrain system design and led a small 
+                group of students to design various aspects of the subsystem. I pursued the design 
+                of a new robust 4WD system after generations of 2WD only cars.
+                Learn more about powertrain system design <a href=/Projects/powertrain.html>here.</a>
+            </p>
+
+            <p>
+                <a href=/Experience/baja.html>Baja Leadership Details</a>
+            </p>
+
+    <h3 class="w3-text-teal">Segal Prototyping & Fabrication Lab - 2018-2022</h3>
+        <h4>MechE 340-2 Undergraduate Assistant (UA)</h4>
+            <p>  As a UA I worked to support an integrated manufacturing, CNC milling, and injection molding 
+                course through machine tutorials, CAD/CAM review, and office hours. I was responsible designing, 
+                writing CAM, and CNCing 120 cavity and core blanks that student teams used to create tooling and
+                parts for injection molding.    
+            </p>
+
+        <h4>Shop Trainer</h4>
+            <p> As a shop trainer I was responsible for training students how to safely use a variety of hand/sheet 
+                metal tools, mills, lathes, and other manual machines. Furthermore, I would assist and guide students
+                with the design and manufacturing of class projects in a machine shop environment while emphasizing
+                design for manufacturing practices. <a href=/Experience/segalshop.html> Learn More</a>
+            </p>
+        
+      
     </div>
     <div class="w3-third w3-container">
       <p class="w3-border w3-padding-large w3-padding-32 w3-center">AD</p>
@@ -77,9 +112,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </div>
   </div>
 
+  <!--THIRD ROW-->
   <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Heading</h1>
+      <h1 class="w3-text-teal">Projects</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
         dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
@@ -89,27 +125,10 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </div>
   </div>
 
-  <!-- Pagination -->
-  <div class="w3-center w3-padding-32">
-    <div class="w3-bar">
-      <a class="w3-button w3-black" href="#">1</a>
-      <a class="w3-button w3-hover-black" href="#">2</a>
-      <a class="w3-button w3-hover-black" href="#">3</a>
-      <a class="w3-button w3-hover-black" href="#">4</a>
-      <a class="w3-button w3-hover-black" href="#">5</a>
-      <a class="w3-button w3-hover-black" href="#">»</a>
-    </div>
-  </div>
+  
 
-  <footer id="myFooter">
-    <div class="w3-container w3-theme-l2 w3-padding-32">
-      <h4>Footer</h4>
-    </div>
+ 
 
-    <div class="w3-container w3-theme-l1">
-      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </div>
-  </footer>
 
 <!-- END MAIN -->
 </div>
@@ -132,11 +151,7 @@ function w3_open() {
   }
 }
 
-// Close the sidebar with the close button
-function w3_close() {
-  mySidebar.style.display = "none";
-  overlayBg.style.display = "none";
-}
+
 </script>
 
 </body>
