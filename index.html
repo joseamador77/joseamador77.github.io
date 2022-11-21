@@ -11,17 +11,21 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
-
-
 .text-block {
   position: relative;
   bottom: 450px;
-  right: 350px;
+  right: 300px;
   background-color: whitesmoke;
   color: black;
   padding-left: 5px;
   padding-right: 5px;
+  padding-top:50px;
   width:60%
+}
+
+.side-pad{
+	padding-left:30px;
+	padding-right:30px;
 }
 
 </style>
@@ -42,33 +46,30 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 </div>
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-top:50px">
+<div class="w3-main side-pad" style="margin-top:50px">
 
 
-<!--ABOUT ME ROW-->
-  
+  <!--ABOUT ME ROW-->
   <div class="w3-row w3-hide-small w3-hide-medium"  >
     <div class="w3-third w3-container">
     </div>
     
-    <div class="w3-twothird w3-container" style="padding-left:150px; margin-bottom:-325px" >
+    <div class="w3-twothird w3-container" style="padding-left:100px; margin-bottom:-325px;" >
     	<img src = https://joseamador77.github.io/images/Intro&education/Jose_grad2.JPG width=75%>  
         <div class="text-block">
-        <h2> About Me </h2>
-          <p>
-              I am currently pursuing a Master's Degree at Stanford University in Mechanical Engineering
-              with a concentration in robotics and I graduated from Northwestern University with a BS in 
-              Mechanical Engineering. I have a lot of hands-on experience with mechanical design and 
-              manufacturing through my time on Northwestern's Baja team, a club where we designed, built, 
-              and raced an offroad car each year. Through Baja, my internships, and other opportunities, 
-              I have gained a myriad of skills and leadership experiences that have made me an
-              excellent, well-rounded Mechanical Engineer. This site will showcase my major experiences 
-              and projects thus far.
-           </p>
+            <h2> About Me </h2>
+            <p>
+                I am currently pursuing a Master's Degree at Stanford University in Mechanical Engineering
+                with a concentration in robotics and I graduated from Northwestern University with a BS in 
+                Mechanical Engineering. I have a lot of hands-on experience with mechanical design and 
+                manufacturing through my time on Northwestern's Baja team, a club where we designed, built, 
+                and raced an offroad car each year. Through Baja, my internships, and other opportunities, 
+                I have gained a myriad of skills and leadership experiences that have made me an
+                excellent, well-rounded Mechanical Engineer. This site will showcase my major experiences 
+                and projects thus far.
+            </p>
          </div>
     </div>
- 
-    
   </div>
 
   <!--EDUCATION ROW-->
@@ -103,16 +104,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <!--EXPERIENCE & LEADERSHIP ROW-->
   <div class="w3-row w3-padding-top-64" id="experience">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
       <h2 class="w3-text-teal">Experience & Leadership</h2>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-half w3-container">
     </div>
   </div>
 
 <!--JOHNSON AND JOHNSON ROW-->
 <div class="w3-row">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
       
     <h3 class="w3-text-teal">Johnson & Johnson - R&D Mechanical Engineering Intern - Summer 2022</h3>
         <p>Check back later</p>
@@ -121,7 +122,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
       
     </div>
-    <div class="w3-third w3-container w3-center">
+    <div class="w3-half w3-container w3-center">
         <img src = https://joseamador77.github.io/images/J&J/JJ_logo.jpg  alt = "JJ Logo" width = 80%>
     </div>
   </div>
@@ -129,7 +130,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!--SHURE ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
       
     <h3 class="w3-text-teal">Shure Incorporated - Process Engineering Intern - Summer 2021</h3>
         <p>I assisted in the research, development, and implementation of new and improved manufacturing 
@@ -139,7 +140,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="location.href = '/Experience/shure.html';">Internship Details</button>
       
     </div>
-    <div class="w3-third w3-container w3-center">
+    <div class="w3-half w3-container w3-center">
         <img src="https://joseamador77.github.io/images/Shure/Shure-Logo.jpg" alt="Shure Logo" width=100%>
     </div>
   </div>
@@ -147,7 +148,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <!--BAJA ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
     <h3 class="w3-text-teal">Northwestern University Baja - 2018-2022</h3>
 
         <h4 class="w3-text-teal">Chief Engineer - 2021-2022</h4>
@@ -168,7 +169,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="location.href = '/Experience/baja.html';">Baja Leadership Details</button>
       
     </div>
-    <div class="w3-third w3-container w3-center" style="padding-top:80px">
+    <div class="w3-half w3-container w3-center" style="padding-top:80px">
         <img src="https://joseamador77.github.io/images/Baja/Bongoo.jpg" alt="Flying Bongo" width=100%>
       
     </div>
@@ -177,7 +178,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <!--SEGAL ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
           
     <h3 class="w3-text-teal">Segal Prototyping & Fabrication Lab - 2018-2022</h3>
         <h4>MechE 340-2 Undergraduate Assistant (UA)</h4>
@@ -197,7 +198,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" style="padding-top:50px">
+    <div class="w3-half w3-container w3-center" style="padding-top:50px">
         <img src="https://joseamador77.github.io/images/Segal/FordShop.jpg" alt="Segal Shop" width=100%>
     </div>
   </div>
@@ -207,17 +208,17 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
   <!--PROJECTS ROW-->
   <div class="w3-row w3-padding-top-64" id="projects">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
       <h2 class="w3-text-teal">Projects</h2>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-half w3-container">
     </div>
   </div>
 
 
   <!--RDS ROW-->
 <div class="w3-row">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <h3>Robot Design Studio Capstone - Winter/Spring 2022</h3>
         <p>
@@ -230,14 +231,14 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
         <img src="https://joseamador77.github.io/images/RDSCapstone/TopLevel.jpg" alt="Top Level Design" width=100%>
     </div>
   </div>
 
 <!--GEEB ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <h3>4WD Powertrain System & Gearbox - 2020-2021</h3>
         <p>
@@ -252,7 +253,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
         <img src="https://joseamador77.github.io/images/Baja/powertrain/GearboxInternals.jpg" alt="Gearbox Internals" width=100%>
     </div>
   </div>
@@ -260,7 +261,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!--AARMS ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <h3>Front Suspension A-Arms</h3>
             <p>
@@ -272,7 +273,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
         <img src="https://joseamador77.github.io/images/Baja/aarms/AArmCad.jpg" alt="AArm CAD" width=100%>
     </div>
   </div>
@@ -281,7 +282,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!--SUMMER URG ROW-->
 <div class="w3-row w3-padding-top-48">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <h3>National Science Foundation Research Experiences for Undergraduates - Additive Materials
             Fatigue Testing </h3>
@@ -296,7 +297,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
         <img src="https://joseamador77.github.io/images/FatigueTester.jpg" alt="Fatigue Tester" width=65%>
     </div>
   </div>
@@ -306,15 +307,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!--SKILLS ROW-->
 <div class="w3-row" id="skills&crafts">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         <h2 class="w3-text-teal">Skills</h2>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-half w3-container">
     </div>
     </div>
 
 <div class="w3-row">
-    <div class="w3-twothird w3-container">        
+    <div class="w3-half w3-container">        
     <p>                
         Manufacturing skills - Haas CNCs, TIG Welding, waterjet, laser cutter, 3D printing (Polyjet, SLA, FDM, binderjet), conversational and manual
         mills and lathes, sheet metal bending
@@ -323,7 +324,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
     </p>
             
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
        
     </div>
   </div>
@@ -331,16 +332,16 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
     <!--CRAFTS/MACHINING ROW-->
 <div class="w3-row w3-padding-top-24" >
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
     <h2 class="w3-text-teal">Crafts/Machining</h2>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-half w3-container">
     </div>
 </div>
 
 
 <div class="w3-row">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <p> I really love making things! I spent the majority of my time at Northwestern in the machine shop, whether it be for Baja, as a shop trainer, or working
             on personal projects. Here is a photo album of some of the cool machining I've done and things I've made. This is only the stuff I have pictures of,
@@ -350,7 +351,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
       
     </div>
-    <div class="w3-third w3-container w3-center" >
+    <div class="w3-half w3-container w3-center" >
         <img src="https://joseamador77.github.io/images/Rose_cropped.JPG" alt="Rose" width=70%>
     </div>
   </div>
@@ -359,15 +360,15 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
 <!--PRE-COLLEGE ROW-->
 <div class="w3-row w3-padding-top-64" id="precollege">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         <h2 class="w3-text-teal">Pre-College</h2>
     </div>
-    <div class="w3-third w3-container">
+    <div class="w3-half w3-container">
     </div>
 </div>
 
 <div class="w3-row">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         
         <h3>FIRST Robotics Competition - 2014-2018</h3>
             <p> 
@@ -383,7 +384,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         
         
     </div>
-    <div class="w3-third w3-container w3-center" style="padding-top:80px" >
+    <div class="w3-half w3-container w3-center" style="padding-top:80px" >
         <img src="https://joseamador77.github.io/images/FRC/HomesteadRoboticsLogo.png" alt="Homestead Robotics Logo" width=100%>
     </div>
     </div>
@@ -391,7 +392,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
             <!--CONTACT ROW-->
     <div class="w3-row w3-padding-top-24" id="contact">
-        <div class="w3-twothird w3-container">
+        <div class="w3-half w3-container">
         <h2 class="w3-text-teal">Contact</h2>
         <ul>
             <li><a href="mailto: joseamador77@yahoo.com" target="_blank"> </a>Email: joseamador77@yahoo.com</li>
@@ -399,7 +400,7 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             <li><a href="/Documents/resume.pdf" target="_blank"> Resume </a> </li>
         </ul>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-half w3-container">
         </div>
     </div>
   

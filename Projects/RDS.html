@@ -11,8 +11,19 @@
 <style>
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
-p.indent {
-    text-indent: 30px;
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  
+  padding: 0 4px;
+}
+
+.side-pad{
+	padding-left:30px;
+	padding-right:30px;
 }
 </style>
 </head>
@@ -28,13 +39,13 @@ p.indent {
 
 
 <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-top:20px">
+<div class="w3-main side-pad" style="margin-top:20px">
 
 
   <!--INTRO-->
   <div class="w3-row w3-padding-top-32">
-      <div class="w3-twothird w3-container">
-            <h1>Robot Design Studio Tablet Capstone</h1>
+      <div class="w3-half w3-container">
+      		<h1>Robot Design Studio - Tablet</h1>
             <p>
                 Our goal was to create a display surface (a tablet) with a four degree-of-freedom robotic mechanism hidden
                 underneath it. Users would couple through the tablet via magnets to produce haptic sensations tangent to the
@@ -46,8 +57,8 @@ p.indent {
             </p>
       
       </div>
-      <div class="w3-third w3-container w3-center">
-          <img src = https://joseamador77.github.io/images/RDSCapstone/RDSTeamPic.jpg alt="Team Picture" width = 100%>
+      <div class="w3-half w3-container w3-center" style="padding-top:20px">
+          <img src = https://joseamador77.github.io/images/RDSCapstone/RDSTeamPic.jpg alt="Team Picture" width = 90%>
       </div>
   </div>
 
@@ -55,7 +66,7 @@ p.indent {
 
     <!--REQS AND ARCHITECTURE-->
     <div class="w3-row w3-padding-top-32">
-        <div class="w3-twothird w3-container">
+        <div class="w3-half w3-container">
             <h2>Requirements and Architecture</h2>
             <p>
                 First, we had to define our requirements and architecture that would guide the future design of our robot. 
@@ -80,7 +91,7 @@ p.indent {
             </p>
         
         </div>
-        <div class="w3-third w3-container w3-center">
+        <div class="w3-half w3-container w3-center" style="padding-top:20px">
             <img src = https://joseamador77.github.io/images/RDSCapstone/Requirements2Pic.jpg alt="Concept Sketch" width = 100%>
         </div>
     </div>
@@ -89,7 +100,7 @@ p.indent {
 
  <!--REFINE CONCEPTS-->
  <div class="w3-row w3-padding-top-32">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         <h2>Refining Concepts</h2>
         <p>
             The next phase of our design process was to create physical prototypes of the power transmission elements,
@@ -108,17 +119,17 @@ p.indent {
 
     
     </div>
-    <div class="w3-third w3-container w3-center">
-        <img src = https://joseamador77.github.io/images/RDSCapstone/RefineConcept3Pic.jpg alt="Concept Sketch" width = 100%>
+    <div class="w3-half w3-container w3-center">
+        <img src = https://joseamador77.github.io/images/RDSCapstone/RefineConcept3Pic.jpg alt="Concept Sketch" width = 90%>
     </div>
 </div>
 
 <!--PROTOTYPING AND INTEGRATION-->
 <div class="w3-row w3-padding-top-32">
-    <div class="w3-twothird w3-container">
+    <div class="w3-container">
         <h2>Prototyping and Integration</h2>
         <p>
-            With our concepts refined, it was now time to prototype the feasible subsystem designs and answer important
+            With our concepts refined, we could prototype the feasible subsystem designs and answer important
             questions regarding design performance and ultimately guide us toward a design that can meet all of our
             requirements.
             
@@ -138,21 +149,26 @@ p.indent {
         </p>
     
     </div>
-    <div class="w3-third w3-container w3-center">
-        <img src = https://joseamador77.github.io/images/RDSCapstone/PrototypeSubsystems4Pic_cropped.png alt="Prototype" width = 100%>
-        <img src = https://joseamador77.github.io/images/RDSCapstone/IntegrateSubsystems5Pic.png alt="Prototype" width = 100%>
-    </div>
+
 </div>
+
+<div class="row">
+    <img src = https://joseamador77.github.io/images/RDSCapstone/PrototypeSubsystems4Pic_cropped.png alt="Prototype" width = 32%>
+    <img src = https://joseamador77.github.io/images/RDSCapstone/ConditionNumberPlot.jpg alt="Plot" width = 32%>
+    <img src = https://joseamador77.github.io/images/RDSCapstone/IntegrateSubsystems5Pic.png alt="Prototype" width = 32%>
+    
+    
+  </div>
 
 
 
 
 <!--ALPHA/BETA DESIGN-->
 <div class="w3-row w3-padding-top-32">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         <h2>Alpha/Beta Design</h2>
         <p>
-            With our concept decided it was time to create an alpha/beta version of our robot. We created a robot with 
+            After choosing a concept, we began work on an alpha version of our robot. We created a robot with 
             two, 2R parallel linkages that would each hold a magnet on the end effector underneath a raspberry pi touch screen. 
             Each 2R linkage had all motors mounted on the base by utilizing a common shaft axis which would reduce the inertia
             felt at the end effector.
@@ -165,7 +181,7 @@ p.indent {
 
     
     </div>
-    <div class="w3-third w3-container w3-center">
+    <div class="w3-half w3-container w3-center">
         <img src = https://joseamador77.github.io/images/RDSCapstone/FinalDoc6Pic1.jpg alt="Overview" width = 100%>
     </div>
 </div>
@@ -173,7 +189,7 @@ p.indent {
 
 <!--MAGNETS-->
 <div class="w3-row w3-padding-top-32">
-    <div class="w3-twothird w3-container">
+    <div class="w3-half w3-container">
         <h2>Magnets</h2>
         <p>
             The choice in magnets at the end effector proved to be the most challenging part. The issue was the 
@@ -187,52 +203,36 @@ p.indent {
 
     
     </div>
-    <div class="w3-third w3-container w3-center">
+    <div class="w3-half w3-container w3-center" style="padding-top:40px" >
         <img src = https://joseamador77.github.io/images/RDSCapstone/FinalDoc6Pic2.jpg alt="Magnets" width = 100%>
     </div>
 </div>
 
-<!--FINAL-->
-<div class="w3-row w3-padding-top-32">
-    <div class="w3-twothird w3-container">
-        <h2>Final Design</h2>
-        <p>
-            <br>
-            Check out our <a href="/Documents/RDS_FinalDocumentation6.pdf" target="_blank"> Final Documentation </a> for an in depth look
-            at our design.
-    
-            <br>
-            <img src="/images/RDSCapstone/TopLevel.jpg" alt="Top Level Design" width="502" height="401">
-    
-            
-            <br>
-            Here is a video of our project.
-            
-            <br>
-    
-            <video width="320" height="240" controls muted>
-                <source src="/images/RDSCapstone/DemoVideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        
-        </p>
-
-    
+<!--FINAL DOCUMENTATION BUTTON-->
+<div class="w3-row w3-padding-top-32 ">
+    <div class="w3-container w3-center">
+        <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top" onclick="location.href = '/Documents/RDS_FinalDocumentation6.pdf';">Final Documentation</button>        
     </div>
-    <div class="w3-third w3-container w3-center">
-        <img src = https://joseamador77.github.io/images/RDSCapstone/RefineConcept3Pic.jpg alt="Concept Sketch" width = 100%>
-    </div>
+ 
 </div>
 
 
-
-
-
+<!--FINAL IMAGES-->
+<div class="w3-row w3-padding-top-32">
+    <div class="w3-half w3-container w3-center">
+        <img src = https://joseamador77.github.io/images/RDSCapstone/TopLevel.jpg alt="Top Level Design" width = 100%>
+    
+    </div>
+    <div class="w3-half w3-container w3-center">
+        <video width=100% controls muted>
+            <source src="/images/RDSCapstone/DemoVideo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
 
    
-  
 
-    
+</div>
 
 
 <!-- END MAIN -->
