@@ -1,62 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+<title>Jose Amador - Powertrain System</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
 
+.side-pad{
+	padding-left:30px;
+	padding-right:30px;
+}
+
+</style>
+</head>
 <body>
-    <h1>Front Suspension A-Arms</h1>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+    <a href="/index.html" class="w3-bar-item w3-button w3-theme-l1">Jose Amador</a>
+    <a href="/index.html#contact" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+  </div>
+</div>
+
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main side-pad" style="margin-top:20px">
+
+
+   <!--INTRO-->
+   <div class="w3-row w3-padding-top-32">
+    <div class="w3-half w3-container">
+        <h1>Front Suspension A-Arms</h1>    
+        <p>
+            In 2019, Northwestern Baja used a double wishbone suspension setup that consisted of an upper and a lower A-arm,
+            both of which connect the chassis to an upright. During the 2019-2020 school year, my project was the 
+            upper A-arm, the main load bearing front suspension member that also connects the front shocks to the suspension system.
+        </p>
+         
+    </div>
+        <div class="w3-half w3-container w3-center" style="padding-top:40px">
+            <img src = https://joseamador77.github.io/images/Baja/aarms/WeldedSuspension_cropped.jpg alt="Suspension Components" width = 100%>
+        </div>
+    </div>
+
+
+   <!--DESIGN OVERVIEW-->
+   <div class="w3-row w3-padding-top-32">
+    <div class="w3-half w3-container">
+        <h2>Design Overview</h2>
+        <p>
+            The A-Arm design consists of two short sections of tube which house delrin bushings that are used to interface
+            with the suspenion tabs on the chassis. The short secions are welded to the main tubes that form the "A", which are coped
+            to a bearing cup and attach to the shock plate. The bearing cup contains a spherical bearing
+            that aligns with the kingpin axis of the steering system. The shock plate is used to attach the shock tabs
+            to the uppper A-arm and interface with the shock.   
+        </p>
+         
+    </div>
+        <div class="w3-half w3-container w3-center" style="padding-top:20px">
+            <img src = https://joseamador77.github.io/images/Baja/aarms/AArmCad.jpg alt="AArm CAD" width = 100%>
+        </div>
+    </div>
+
+
+    <!--FINITE ELEMENT ANALYSIS-->
+   <div class="w3-row w3-padding-top-32">
+    <div class="w3-half w3-container">
+        <h2>Finite Element Analysis</h2>
+        <p>
+            The upper A-arm must be capable of withstanding the punishments of rough off-road terrain. The most difficult
+            load case is when the car goes off large jumps/over obstacles and the landing exerts high forces on the suspension components.
+            I conducted FEA to simulate this driving scenario and ensure that the suspenion would not yield.
+            The FEA computed the Von Mises stress in 4130 alloy steel and was used to optimize for weight
+            while maintaining a minimum 1.3 FOS.
+        </p>
+         
+    </div>
+        <div class="w3-half w3-container w3-center" style="padding-top:20px">
+            <img src = https://joseamador77.github.io/images/Baja/aarms/AArmFEA.jpg alt="AArm FEA Results"  width = 100%>
+        </div>
+    </div>
+
+       <!--FIXTURING-->
+   <div class="w3-row w3-padding-top-32">
+    <div class="w3-half w3-container">
+        <h2>Fixturing</h2>
+        <p>
+            Once the A-arm was designed, it had to be manufactured and each component welded together in a specific orientation/position.
+            Each component is attached to waterjetted fixture plate using precision machined components along with 3D printed fixtures, 
+            ensuring quick and accurate setup for welding while not overconstraining the design.
+            I utilized the same fixture plate for other suspension components, allowing fixtures to be reused and setups to be completed/torn down quickly.
+        </p>
+       
+         
+    </div>
+        <div class="w3-half w3-container w3-center" style="padding-top:20px">
+            <img src = https://joseamador77.github.io/images/Baja/aarms/AArmFixturing.jpg alt="AArm Fixturing" width = 100%>
+        </div>
+    </div>
+
+   
+
+
+  
 
     
-    <h2>Introduction</h2>
-    <p>
-        Northwestern Baja uses a double wishbone suspension setup that consists of an upper and a lower A-arm,
-        both of which connect the chassis to an upright. During the 2019-2020 school year, my project was the 
-        upper A-arm, the main load bearing front suspension member that also connects the front shocks to the suspension system.
-
-        <br>
-        <img src="/images/Baja/aarms/WeldedSuspension.jpg" alt="Suspension Components" width="502" height="401">
-    </p>
 
 
-    
-    <h2>Design Overview</h2>
-    <p>
-        The A-Arm design consists of two short sections of tube which house delrin bushings that are used to interface
-        with the suspenion tabs on the chassis. These are welded to the main tubes, the ones that form the "A",
-        which are coped to a bearing cup and attach to the shock plate. The bearing cup contains a spherical bearing
-        that aligns with the kingpin axis of the steering system. The shock plate is used to attach the shock tabs
-        to the uppper A-arm and interface with the shock.
-        
-        <br>
-        <img src="/images/Baja/aarms/AArmCad.jpg" alt="AArm CAD" width="502" height="401">
-    </p>
-
-    <h2>Finite Element Analysis</h2>
-    <p>
-        The upper A-arm must be capable of withstanding the punishments of rough off-road terrain. The most difficult
-        load case is when the car goes off large jumps/over obstacles and the shocks exert high forces on the suspension.
-        I conducted FEA to simulate this driving scenario and ensure that the suspenion would not yield after taking a
-        large jump. The FEA computed the Von Mises stress in 4130 alloy steel and was used to optimize for weight
-        while maintaining a FOS of 1.3
-        
-        <br>
-        <img src="/images/Baja/aarms/AArmFEA.jpg" alt="AArm FEA Results" width="502" height="401">
-    </p>
-
-    <h2>Fixturing</h2>
-    <p>
-        Once the A-arm was designed, it had to be manufactured and each component welded together in a specific orientation/position.
-        Using precision machined components along with 3D printed fixtures, I was able to secure each component
-        to a waterjet fixturing plate, ensuring quick and accurate setup for welding while not overconstraining the design.
-        I also designed the fixturing setup for the other suspension components, utilizing the same fixtures where possible
-        and keeping everything on the same fixture plate for efficient/cheap setup.
-        
-        <br>
-        <img src="/images/Baja/aarms/AArmFixturing.jpg" alt="AArm Fixturing" width="502" height="401">
-    </p>
+<!-- END MAIN -->
+</div>
 
 
-
-    
 
 </body>
-
 </html>
+
+
+
