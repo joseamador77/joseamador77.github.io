@@ -75,6 +75,11 @@
 
 html,body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
 
+h1,h2 {font-weight: bold;}
+h3,h4 {font-style: italic;}
+
+
+/* Intro Text Block */  
 .text-block {
     position: relative;
     bottom: 450px;
@@ -87,7 +92,8 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
     width:60%
   }
 
-.row {
+/* row of pictures */  
+.row-of-pics {
   display: flex;
   justify-content: center;
   flex-wrap: nowrap;
@@ -96,7 +102,12 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
   padding: 0 4px;
 }
 
+/* padding for all pages */
 .side-pad{
 	padding-left:30px;
 	padding-right:30px;
 }
+
+.nav-bar-first {color:#fff !important; background-color:#1d6fb8 !important}
+.nav-bar {color:#fff !important; background-color:#175993 !important}
+
