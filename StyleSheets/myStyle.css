@@ -76,8 +76,9 @@
 body {font-family: "Open Sans", sans-serif;}
 
 h1,h2 {font-family: "Open Sans", sans-serif;
-        font-weight: 700;
+        font-weight: 700 !important;
       }
+
 h3,h4 {font-family: "Open Sans", sans-serif;
       font-style: italic;
       }
@@ -96,7 +97,7 @@ h5,h6{
     color: black;
     padding-left: 5px;
     padding-right: 5px;
-    padding-top:50px;
+    padding-top:10px;
     width:60%
   }
 
@@ -118,4 +119,6 @@ h5,h6{
 
 .nav-bar-first {color:#fff !important; background-color:#1d6fb8 !important}
 .nav-bar {color:#fff !important; background-color:#175993 !important}
+
+.button-background{color:#fff !important; background-color:#175993 !important}
 
