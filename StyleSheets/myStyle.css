@@ -73,10 +73,18 @@
 
 
 
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Open Sans", sans-serif;}
+body {font-family: "Open Sans", sans-serif;}
 
-h1,h2 {font-weight: bold;}
-h3,h4 {font-style: italic;}
+h1,h2 {font-family: "Open Sans", sans-serif;
+        font-weight: 700;
+      }
+h3,h4 {font-family: "Open Sans", sans-serif;
+      font-style: italic;
+      }
+
+h5,h6{
+  font-family: "Open Sans", sans-serif;
+}
 
 
 /* Intro Text Block */  
