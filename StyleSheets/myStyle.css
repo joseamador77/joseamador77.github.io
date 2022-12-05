@@ -122,3 +122,8 @@ h5,h6{
 
 .button-background{color:#fff !important; background-color:#175993 !important}
 
+
+.text-outline{
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
